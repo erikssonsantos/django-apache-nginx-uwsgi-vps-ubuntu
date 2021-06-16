@@ -81,7 +81,7 @@ uwsgi_param  SERVER_PORT        $server_port;
 uwsgi_param  SERVER_NAME        $server_name;
 ```
 
-* Create NGINX config file at /etc/nginx/sites/available
+* Create NGINX config file at /etc/nginx/sites-available
 ```
 upstream django {
     server unix:///home/ubuntu/django-apache-nginx-uwsgi-vps-ubuntu/mysite.sock; 
